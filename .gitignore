@@ -1,7 +1,7 @@
 book
 
-tools/mdbook-drawio/target/
-tools/mdbook-drawio/Cargo.lock
+_tools/mdbook-drawio/target/
+_tools/mdbook-drawio/Cargo.lock
 
 .DS_Store
 .AppleDouble

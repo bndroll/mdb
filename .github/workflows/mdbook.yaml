@@ -27,11 +27,11 @@ jobs:
 
       - uses: Swatinem/rust-cache@v2
         with:
-          workspaces: "tools/mdbook-drawio -> target"
+          workspaces: "_tools/mdbook-drawio -> target"
 
       - name: Build Drawio Preprocessor
         run: |
-          cd tools/mdbook-drawio
+          cd _tools/mdbook-drawio
           cargo build --release
           sudo cp target/release/mdbook-drawio /usr/local/bin/
 

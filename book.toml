@@ -5,8 +5,13 @@ multilingual = false
 src = "src"
 title = "mdbook"
 
+[build]
+build-dir = "book"
+create-missing = true
+
 [preprocessor.drawio]
 command = "mdbook-drawio"
 
 [output.html]
-additional-css = ["src/assets/custom.css"]
+additional-css = ["src/_assets/custom.css"]
+additional-js = []
