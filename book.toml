@@ -5,5 +5,8 @@ multilingual = false
 src = "src"
 title = "mdbook"
 
+[preprocessor.drawio]
+command = "mdbook-drawio"
+
 [output.html]
 additional-css = ["src/assets/custom.css"]

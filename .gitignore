@@ -1,1 +1,17 @@
 book
+
+tools/mdbook-drawio/target/
+tools/mdbook-drawio/Cargo.lock
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+.idea/
+.vscode/
+*.swp
+*.swo
+
+*.tmp
+*.bak
+*~
