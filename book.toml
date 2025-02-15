@@ -3,4 +3,7 @@ authors = ["bounderoll"]
 language = "en"
 multilingual = false
 src = "src"
-title = "tst"
+title = "mdbook"
+
+[output.html]
+additional-css = ["src/assets/custom.css"]
