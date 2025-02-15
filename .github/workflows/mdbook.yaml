@@ -25,6 +25,10 @@ jobs:
           toolchain: stable
           profile: minimal
 
+      - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: "tools/mdbook-drawio -> target"
+
       - name: Build Drawio Preprocessor
         run: |
           cd tools/mdbook-drawio

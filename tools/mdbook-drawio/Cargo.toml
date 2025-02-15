@@ -4,7 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-mdbook = "0.4"
-regex = "1"
-serde_json = "1.0"
-clap = "4.0"
+mdbook = { version = "0.4.35", default-features = false }
+regex = { version = "1.9.5", default-features = false, features = ["std"] }
+serde_json = { version = "1.0", default-features = false, features = ["std"] }
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+strip = true
+panic = 'abort'
